@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dc_treatments",
+  "info": {
+    "singularName": "dc-treatment",
+    "pluralName": "dc-treatments",
+    "displayName": "DC Treatment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "app": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::app.app"
+    },
+    "patient": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dc-patient.dc-patient"
+    },
+    "doctor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dc-doctor.dc-doctor"
+    }
+  }
+}

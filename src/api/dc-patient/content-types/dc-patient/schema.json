@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dc_patients",
+  "info": {
+    "singularName": "dc-patient",
+    "pluralName": "dc-patients",
+    "displayName": "DC Patient",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "idCardNumber": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "sex": {
+      "type": "enumeration",
+      "enum": [
+        "F",
+        "M"
+      ]
+    },
+    "birthDate": {
+      "type": "date"
+    },
+    "country": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::country.country"
+    },
+    "state": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "app": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::app.app"
+    }
+  }
+}

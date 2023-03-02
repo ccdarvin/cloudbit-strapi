@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "apps",
+  "info": {
+    "singularName": "app",
+    "pluralName": "apps",
+    "displayName": "App",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "access": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::access.access",
+      "mappedBy": "app"
+    },
+    "code": {
+      "type": "string",
+      "regex": "^[\\w._%+-]+$",
+      "unique": true,
+      "required": true,
+      "minLength": 3,
+      "maxLength": 15
+    },
+    "country": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::country.country"
+    },
+    "currency": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::currency.currency"
+    }
+  }
+}

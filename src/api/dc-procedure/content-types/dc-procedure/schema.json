@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dc_procedures",
+  "info": {
+    "singularName": "dc-procedure",
+    "pluralName": "dc-procedures",
+    "displayName": "DC Procedure",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "app": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::app.app"
+    },
+    "category": {
+      "type": "string"
+    }
+  }
+}
