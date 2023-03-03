@@ -63,11 +63,11 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "access": {
+    "accesses": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::access.access",
-      "mappedBy": "users_permissions_user"
+      "mappedBy": "user"
     }
   }
 }

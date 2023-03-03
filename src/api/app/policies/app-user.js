@@ -11,8 +11,8 @@ module.exports = (policyContext, config, { strapi }) => {
   }
   
   const filters ={
-    access: {
-      users_permissions_user: {
+    accesses: {
+      user: {
         id: {
           '$eq': policyContext.state.user.id
         }

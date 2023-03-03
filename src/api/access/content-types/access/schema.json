@@ -4,24 +4,25 @@
   "info": {
     "singularName": "access",
     "pluralName": "accesses",
-    "displayName": "Access"
+    "displayName": "Access",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "accesses"
+    },
     "app": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::app.app",
-      "inversedBy": "access"
-    },
-    "users_permissions_user": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "access"
+      "inversedBy": "accesses"
     }
   }
 }

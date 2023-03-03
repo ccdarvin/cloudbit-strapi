@@ -5,37 +5,7 @@
  */
 
 module.exports = async (policyContext, config, { strapi }) => {
-    // Add your own logic here.
-    const url = new URL(policyContext.request.header.origin)
-    // get subdomain
-    const subdomains = url.hostname.split('.')
-    if (subdomains.length < 3) return false
 
-    const appCode = subdomains[0]
-    const user = policyContext.state.user
-
-    if (!user) return false
-    const access = await strapi.entityService.findMany(
-      'api::access.access',
-      {
-        filters: {
-          app: {
-            code: {
-              '$eq': appCode
-            }
-          },
-          users_permissions_user: {
-            id: {
-              '$eq': user.id
-            }
-          }
-        },
-        populate: ['app']
-      }
-    )
-    if (access.length === 0) return false
-    console.log('access', policyContext.request.body)
-    policyContext.request.body.data.app = access[0].app.id
-    console.log('access', policyContext.request.body)
-    return true;
+  policyContext.request.body.data.app = policyContext.state.app.id
+  return true;
 };

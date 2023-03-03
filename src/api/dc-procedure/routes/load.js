@@ -7,7 +7,7 @@ module.exports = {
         path: '/dc-procedure/load',
         handler: 'dc-procedure.loadData',
         config: {
-            policies: ['global::currentAppGet']
+            policies: ['global::currentApp']
         }
       },
     ]

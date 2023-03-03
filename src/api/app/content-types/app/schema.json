@@ -24,12 +24,6 @@
         "images"
       ]
     },
-    "access": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::access.access",
-      "mappedBy": "app"
-    },
     "code": {
       "type": "string",
       "regex": "^[\\w._%+-]+$",
@@ -47,6 +41,12 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::currency.currency"
+    },
+    "accesses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::access.access",
+      "mappedBy": "app"
     }
   }
 }

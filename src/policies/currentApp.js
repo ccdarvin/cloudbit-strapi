@@ -17,7 +17,7 @@ module.exports = async (policyContext, config, { strapi }) => {
     if (!user) return false
     const access = await strapi.db.query('api::access.access').findOne({
       where: {
-        users_permissions_user : {
+        user : {
           id: user.id
         },
         app: {
@@ -27,8 +27,6 @@ module.exports = async (policyContext, config, { strapi }) => {
       populate: ['app']
     })
     policyContext.state.app = access.app
-
-    if (access.length === 0) return false
 
     let filters = policyContext.request.query.filters || {}
     filters.app = {

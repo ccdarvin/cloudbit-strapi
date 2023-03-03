@@ -9,16 +9,16 @@ const { createCoreRouter } = require('@strapi/strapi').factories;
 module.exports = createCoreRouter('api::dc-patient.dc-patient', {
     config: {
         create: {
-            policies: ['global::currentAppPost']
+            policies: ['global::currentApp', 'global::currentAppPost']
         },
         update: {
-            policies: ['global::currentAppPut']
+            policies: ['global::currentApp']
         },
         find: {
-            policies: ['global::currentAppGet']
+            policies: ['global::currentApp']
         },
         findOne: {
-            policies: ['global::currentAppGet']
+            policies: ['global::currentApp']
         },
     }
 });
