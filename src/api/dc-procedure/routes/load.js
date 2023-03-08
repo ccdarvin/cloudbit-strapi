@@ -3,8 +3,8 @@
 module.exports = {
     routes: [
       { // Path defined with a URL parameter
-        method: 'GET',
-        path: '/dc-procedure/load',
+        method: 'POST',
+        path: '/dc-procedures/load',
         handler: 'dc-procedure.loadData',
         config: {
             policies: ['global::currentApp']

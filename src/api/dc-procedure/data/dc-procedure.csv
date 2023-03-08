@@ -1,0 +1,24 @@
+code,name,category
+D0120,Examen bucal periódico - paciente establecido.,Diagnostico
+D0140,Examen bucal limitado - enfocado en un problema.,Diagnostico
+D0145,Examen bucal para un paciente menor de tres años y asesorado por un proveedor médico de atención primaria.,Diagnostico
+D0150,Examen bucal integral - paciente nuevo o establecido.,Diagnostico
+D0160,"Evaluación bucal detallada y exhaustiva, enfocada al problema, según reporte.",Diagnostico
+D0170,"Re-evaluación - limitada, enfocada en el problema (paciente establecido; no para visitas post-operatorias).",Diagnostico
+D0180,Examen periodontal integral - paciente nuevo o establecido.,Diagnostico
+D0190,Examinación de un paciente.,Diagnostico
+D0191,Evaluación de un paciente.,Diagnostico
+D0210,Intraoral – serie completa de imágenes radiográficas.,Radiografías
+D0220,Intraoral - primera imagen radiográfica periapical.,Radiografías
+D0230,Intraoral - cada imagen radiográfica periapical adicional.,Radiografías
+D0240,Intraoral – imagen radiográfica oclusal.,Radiografías
+D0250,Extraoral - primera imagen radiográfica.,Radiografías
+D0260,Extraoral - cada imagen radiográfica adicional.,Radiografías
+D0270,Aleta de mordida - imagen radiográfica simple.,Radiografías
+D0272,Aletas de mordida - dos imágenes radiográficas.,Radiografías
+D0273,Aletas de mordida - tres imágenes radiográficas.,Radiografías
+D0274,Aletas de mordida - cuatro imágenes radiográficas.,Radiografías
+D0277,Aletas de mordida verticales - 7 a 8 imágenes radiográficas.,Radiografías
+D0330,Imagen radiográfica panorámica.,Radiografías
+D0340,Imagen radiográfica cefalométrica.,Radiografías
+D0350,Imágenes fotográficas bucales/faciales 2D obtenidas intra- o extraoralmente.,Radiografías
