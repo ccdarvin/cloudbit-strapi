@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_items_dc_treatment_items",
+  "info": {
+    "displayName": "treatment items",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "itemId": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "quantity": {
+      "type": "decimal"
+    },
+    "discount": {
+      "type": "decimal"
+    },
+    "priceBase": {
+      "type": "decimal"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "total": {
+      "type": "decimal"
+    }
+  }
+}

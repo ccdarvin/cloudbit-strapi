@@ -29,6 +29,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::dc-doctor.dc-doctor"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "dc.dc-treatment-items"
     }
   }
 }
