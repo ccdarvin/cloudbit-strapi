@@ -1,14 +1,11 @@
 {
   "collectionName": "components_items_dc_treatment_items",
   "info": {
-    "displayName": "treatment items",
+    "displayName": "Procedures",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "itemId": {
-      "type": "string"
-    },
     "code": {
       "type": "string"
     },
@@ -32,6 +29,11 @@
     },
     "total": {
       "type": "decimal"
+    },
+    "procedure": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dc-procedure.dc-procedure"
     }
   }
 }
