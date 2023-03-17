@@ -34,6 +34,18 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::dc-procedure.dc-procedure"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "planned",
+        "accepted",
+        "in_progress",
+        "finished",
+        "canceled"
+      ],
+      "required": false,
+      "default": "planned"
     }
   }
 }
