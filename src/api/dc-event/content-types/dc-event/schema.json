@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dc_events",
+  "info": {
+    "singularName": "dc-event",
+    "pluralName": "dc-events",
+    "displayName": "DC Event"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "datetime"
+    },
+    "endDate": {
+      "type": "datetime"
+    }
+  }
+}
