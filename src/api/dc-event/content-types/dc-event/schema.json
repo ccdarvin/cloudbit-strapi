@@ -23,6 +23,21 @@
     },
     "duration": {
       "type": "integer"
+    },
+    "dc_doctor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dc-doctor.dc-doctor"
+    },
+    "dc_patient": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dc-patient.dc-patient"
+    },
+    "dc_treatment": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dc-treatment.dc-treatment"
     }
   }
 }
