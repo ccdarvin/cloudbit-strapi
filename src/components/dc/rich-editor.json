@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_dc_rich_editors",
+  "info": {
+    "displayName": "richEditor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "html": {
+      "type": "text"
+    },
+    "text": {
+      "type": "text"
+    },
+    "json": {
+      "type": "json"
+    }
+  }
+}

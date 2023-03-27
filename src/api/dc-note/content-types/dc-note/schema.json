@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dc_notes",
+  "info": {
+    "singularName": "dc-note",
+    "pluralName": "dc-notes",
+    "displayName": "DC Note",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "patient": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dc-patient.dc-patient"
+    },
+    "note": {
+      "type": "component",
+      "repeatable": false,
+      "component": "dc.rich-editor"
+    }
+  }
+}
