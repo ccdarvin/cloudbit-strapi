@@ -21,6 +21,11 @@
       "type": "component",
       "repeatable": false,
       "component": "dc.rich-editor"
+    },
+    "app": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::app.app"
     }
   }
 }
