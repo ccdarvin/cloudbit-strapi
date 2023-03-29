@@ -55,6 +55,13 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::app.app"
+    },
+    "avatar": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
