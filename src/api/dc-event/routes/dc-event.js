@@ -20,5 +20,5 @@ module.exports = createCoreRouter('api::dc-event.dc-event', {
         findOne: {
             policies: ['global::currentApp']
         },
-    } 
-});
+    }
+})
