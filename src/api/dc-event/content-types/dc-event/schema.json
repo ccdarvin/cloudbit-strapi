@@ -43,6 +43,16 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::app.app"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "appt",
+        "task",
+        "rem"
+      ],
+      "required": false,
+      "default": "appt"
     }
   }
 }
